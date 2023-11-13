@@ -1,6 +1,6 @@
 # Python Rutgers Bootcamp Challenge - CryptoClustering
 
-This activity is broken down into multiple deliverables to include a javascript application, an already created index file, and a dashboard viable via a web browser. 
+This activity is broken down into Python code which uncovers was of predicting group clusters using unsupervised machine learning. 
 
 ## Description
 
