@@ -43,10 +43,24 @@ In this assignment, you’ll use your knowledge of Python and unsupervised learn
   * Predict the clusters to group the cryptocurrencies using the original scaled DataFrame.
   * Create a copy of the original data and add a new column with the predicted clusters.
   * Create a scatter plot using hvPlot as follows:
-   *  Set the x-axis as "PC1" and the y-axis as "PC2".
-   *  Color the graph points with the labels found using K-means.
-   *  Add the "coin_id" column in the hover_cols parameter to identify the cryptocurrency represented by each data point.
+    *  Set the x-axis as "PC1" and the y-axis as "PC2".
+    *  Color the graph points with the labels found using K-means.
+    *  Add the "coin_id" column in the hover_cols parameter to identify the cryptocurrency represented by each data point.
  
+ ## Optimize Clusters with Principal Component Analysis
+ 
+* Using the original scaled DataFrame, perform a PCA and reduce the features to three principal components.
+* Retrieve the explained variance to determine how much information can be attributed to each principal component and then answer the following question in your notebook:
+* 
+  * What is the total explained variance of the three principal components?
+    
+* Create a new DataFrame with the PCA data and set the "coin_id" index from the original DataFrame as the index for the new DataFrame:
+  * The first five rows of the PCA DataFrame should appear as follows:
+
+![Screenshot 2023-11-13 145133](https://github.com/Connextstrategy/CryptoClustering/assets/18508699/508359d4-23df-4b8b-b5c8-1fa88a48147c)
+
+ 
+
 
 ### Dependencies
 
