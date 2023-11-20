@@ -1,28 +1,34 @@
-# Python Rutgers Bootcamp Challenge - CryptoClustering
+# Python Rutgers Bootcamp Challenge - Credit Risk Classification
 
 This activity is broken down into Python code which uncovers was of predicting group clusters using unsupervised machine learning. 
 
 ## Description
 
-In this assignment, you’ll use your knowledge of Python and unsupervised learning to predict if cryptocurrencies are affected by 24-hour or 7-day price changes.
+In this Challenge, you’ll use various techniques to train and evaluate a model based on loan risk. You’ll use a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers.
 
 ## Instructions
 
-1. Rename the Crypto_Clustering_starter_code.ipynb file as Crypto_Clustering.ipynb.
+The instructions for this Challenge are divided into the following subsections:
 
-2. Load the crypto_market_data.csv into a DataFrame.
+* Split the Data into Training and Testing Sets
 
-3. Get the summary statistics and plot the data to see what the data looks like before proceeding.
+* Create a Logistic Regression Model with the Original Data
 
-## Prepare the Data
+* Write a Credit Risk Analysis Report
 
-* Use the StandardScaler() module from scikit-learn to normalize the data from the CSV file.
+## Split the Data into Training and Testing Sets
 
-* Create a DataFrame with the scaled data and set the "coin_id" index from the original DataFrame as the index for the new DataFrame.
+Open the starter code notebook and use it to complete the following steps:
 
-- The first five rows of the scaled DataFrame should appear as follows:
+1. Read the lending_data.csv data from the Resources folder into a Pandas DataFrame.
 
-![Screenshot 2023-11-13 143742](https://github.com/Connextstrategy/CryptoClustering/assets/18508699/e2ee7df3-1d4a-4561-a19a-6dc1627fd9c5)
+2. Create the labels set (y) from the “loan_status” column, and then create the features (X) DataFrame from the remaining columns.
+
+![Screenshot 2023-11-20 185139](https://github.com/Connextstrategy/CryptoClustering/assets/18508699/bc998e7f-a825-4052-b727-305e858937e3)
+
+3. Split the data into training and testing datasets by using train_test_split.
+
+
 
 ## Find the Best Value for k Using the Original Scaled DataFrame
 
