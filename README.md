@@ -30,31 +30,35 @@ Open the starter code notebook and use it to complete the following steps:
 
 
 
-## Find the Best Value for k Using the Original Scaled DataFrame
+## Create a Logistic Regression Model with the Original Data
 
-* Use the elbow method to find the best value for k using the following steps:
-  
+Use your knowledge of logistic regression to complete the following steps:
+
+1. Fit a logistic regression model by using the training data (X_train and y_train).
+
+2. Save the predictions for the testing data labels by using the testing feature data (X_test) and the fitted model.
+
+3. Evaluate the model’s performance by doing the following:
+
+* Generate a confusion matrix.
+
+* Print the classification report.
+
+4. Answer the following question: How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
+   
   * Create a list with the number of k values from 1 to 11.
-  * Create an empty list to store the inertia values.
-  * Create a for loop to compute the inertia with each possible value of k.
-  * Create a dictionary with the data to plot the elbow curve.
-  * Plot a line chart with all the inertia values computed with the different values of k to visually identify the optimal value for k.
-  * Answer the following question in your notebook: What is the best value for k?
  
- ## Cluster Cryptocurrencies with K-means Using the Original Scaled Data
+ ## Write a Credit Risk Analysis Report
 
+Write a brief report that includes a summary and analysis of the performance of the machine learning models that you used in this homework. You should write this report as the README.md file included in your GitHub repository.
 
-* Use the following steps to cluster the cryptocurrencies for the best value for k on the original scaled data:
-  
-  * Initialize the K-means model with the best value for k.
-  * Fit the K-means model using the original scaled DataFrame.
-  * Predict the clusters to group the cryptocurrencies using the original scaled DataFrame.
-  * Create a copy of the original data and add a new column with the predicted clusters.
-  * Create a scatter plot using hvPlot as follows:
-    
-    *  Set the x-axis as "PC1" and the y-axis as "PC2".
-    *  Color the graph points with the labels found using K-means.
-    *  Add the "coin_id" column in the hover_cols parameter to identify the cryptocurrency represented by each data point.
+Structure your report by using the report template that Starter_Code.zip includes, ensuring that it contains the following:
+
+1. An overview of the analysis: Explain the purpose of this analysis.
+
+2. The results: Using a bulleted list, describe the accuracy score, the precision score, and recall score of the machine learning model.
+
+3. A summary: Summarize the results from the machine learning model. Include your justification for recommending the model for use by the company. If you don’t recommend the model, justify your reasoning.
  
  ## Optimize Clusters with Principal Component Analysis
  
